@@ -32,4 +32,5 @@ async def main(extractor: Extractor):
 
     print(token)
 
-run(main(extractor))```
+run(main(extractor))
+```
