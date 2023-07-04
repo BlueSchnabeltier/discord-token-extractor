@@ -1,6 +1,6 @@
 # Discord Token Extractor
 ## About
-This is a library to get a Discord user token from an email, password and optionally the TOTP secret. This is being done with [Vinyzu/Botright](https://github.com/Vinyzu/Botright/) (a [Playwright](https://playwright.dev/python/) fork).
+This is a library to get a Discord user token from an email, password and optionally the TOTP secret. This is being done with [Playwright](https://playwright.dev/python/) (a browser automation framework).
 
 ## Features
 - Exception catching
