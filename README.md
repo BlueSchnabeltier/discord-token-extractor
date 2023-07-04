@@ -2,12 +2,18 @@
 ## About
 This is a library to get a Discord user token from an email, password and optionally the TOTP secret. This is being done with [Playwright](https://playwright.dev/python/) (a browser automation framework).
 
-## Features
+## Key Features
 - Exception catching
 - 2fa support (only for OTP)
 
-# Example
-Here is a basic example that prints the token to the terminal:
+## Installation
+To install Discord Token Extractor run:
+````bash
+pip install git+https://github.com/BlueSchnabeltier/discord-token-extractor.git
+```
+
+## Examples
+### Basic Example
 ```python
 from asyncio import run
 from discord_token_extractor import Extractor
