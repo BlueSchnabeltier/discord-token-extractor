@@ -8,7 +8,7 @@ This is a library to get a Discord user token from an email, password and option
 
 ## Installation
 To install Discord Token Extractor run:
-````bash
+```bash
 pip install git+https://github.com/BlueSchnabeltier/discord-token-extractor.git
 ```
 
