@@ -13,7 +13,7 @@ class Extractor:
         while True:
             try:
                 with sync_playwright() as pw:
-                    browser = pw.firefox.launch(headless=False)
+                    browser = pw.firefox.launch()
                     page = browser.new_page()
 
                     page.goto("https://discord.com/login")
@@ -59,7 +59,7 @@ class Extractor:
                         browser.close()
 
                         return token
-            
+
             except AsyncPWTimeoutError:
                 continue
 
@@ -67,7 +67,7 @@ class Extractor:
         while True:
             try:
                 with async_playwright() as pw:
-                    browser = await pw.firefox.launch(headless=True)
+                    browser = await pw.firefox.launch()
                     page = await browser.new_page()
 
                     await page.goto("https://discord.com/login")
@@ -113,7 +113,7 @@ class Extractor:
                         await browser.close()
 
                         return token
-                    
+
             except SyncPWTimeoutError:
                 continue
 
