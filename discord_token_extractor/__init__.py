@@ -11,13 +11,13 @@ class Extractor:
 
     def sync_extract_token(self):
         with sync_playwright() as pw:
-            browser = pw.firefox.launch(headless=True)
+            browser = pw.firefox.launch()
             page = browser.new_page()
 
             page.goto("https://discord.com/login")
             page.locator("//*[@id='app-mount']/div[2]/div[1]/div[1]/div/div/div/div/form").wait_for()
             page.query_selector("[aria-labelledby=':r0:']").fill(self.email)
-            page.query_selector("[aria-labelledby=':r1:']").fill(self.password)
+            page.query_selector("[aria-labelledby=':r2:']").fill(self.password)
             page.locator("//*[@id='app-mount']/div[2]/div[1]/div[1]/div/div/div/div/form/div[2]/div/div[1]/div[2]/button[2]").click()
 
             try:
